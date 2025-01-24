@@ -44,7 +44,7 @@ const Website = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 text-white relative overflow-hidden"
+        className="bg-gradient-to-r from-purple-600  via-indigo-600 to-blue-600 text-white relative overflow-hidden"
       >
         <motion.div
           className="absolute inset-0 bg-black opacity-10"
@@ -93,7 +93,7 @@ const Website = () => {
         <div className="container mx-auto px-6">
           <motion.h2
             {...fadeInUp}
-            className="text-3xl font-bold text-center mb-12"
+            className="text-3xl text-black font-bold text-center mb-12"
           >
             Who We Are
           </motion.h2>
@@ -123,7 +123,7 @@ const Website = () => {
         <div className="container mx-auto px-6">
           <motion.h2
             {...fadeInUp}
-            className="text-3xl font-bold text-center mb-16"
+            className="text-3xl font-bold text-black text-center mb-16"
           >
             Our Services
           </motion.h2>
@@ -137,7 +137,9 @@ const Website = () => {
                 className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow"
               >
                 <div className="text-indigo-600">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                <h3 className="text-xl text-black font-semibold mb-3">
+                  {service.title}
+                </h3>
                 <p className="text-gray-600">{service.description}</p>
               </motion.div>
             ))}
